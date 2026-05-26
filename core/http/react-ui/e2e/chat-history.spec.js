@@ -46,9 +46,14 @@ test.describe('Chat - History Persistence', () => {
     await expect(page.locator('.chat-message').filter({ hasText: 'Hello world' })).toBeVisible({ timeout: 10_000 })
     await expect(page.locator('.chat-message').filter({ hasText: 'Hello back!' })).toBeVisible({ timeout: 10_000 })
 
-    // Refresh the page
+    // Wait for the debounced localStorage save to complete (500ms delay in useDebouncedEffect)
+    await page.waitForTimeout(800)
+
+    // Refresh the page and wait for the app to be ready
     await page.reload()
     await expect(page.getByRole('button', { name: 'test-model' })).toBeVisible({ timeout: 10_000 })
+    // Wait for localStorage to be read and chat to be rendered
+    await page.waitForTimeout(500)
 
     // Messages should still be visible after refresh
     await expect(page.locator('.chat-message').filter({ hasText: 'Hello world' })).toBeVisible({ timeout: 10_000 })
@@ -90,8 +95,8 @@ test.describe('Chat - History Persistence', () => {
     await sendMessage(page, 'Message in chat B')
     await expect(page.locator('.chat-message').filter({ hasText: 'Message in chat B' })).toBeVisible({ timeout: 10_000 })
 
-    // Switch back to chat A
-    await page.locator('.chat-list-item').first().click()
+    // Switch back to chat A (new chats are prepended, so chat A is now second)
+    await page.locator('.chat-list-item').nth(1).click()
 
     // Chat A's message should be restored
     await expect(page.locator('.chat-message').filter({ hasText: 'Message in chat A' })).toBeVisible({ timeout: 10_000 })
@@ -109,19 +114,15 @@ test.describe('Chat - History Persistence', () => {
     await sendMessage(page, 'Message to delete')
     await expect(page.locator('.chat-message').filter({ hasText: 'Message to delete' })).toBeVisible({ timeout: 10_000 })
 
-    // Create a second chat so we can delete the first one
+    // Create a second chat so deletion is allowed (can't delete the last chat)
     await page.locator('button', { hasText: 'New Chat' }).click()
 
-    // Delete the first chat
-    await page.locator('.chat-list-item').first().hover()
-    await page.locator('.chat-list-item').first().locator('.chat-list-item-delete').click()
+    // New chat is prepended to the list, so the original chat is now second
+    // Hover and click delete on the original chat (nth(1))
+    await page.locator('.chat-list-item').nth(1).hover()
+    await page.locator('.chat-list-item').nth(1).locator('.chat-list-item-delete').click()
 
-    // Confirm deletion if a dialog appears
-    const confirmBtn = page.locator('button', { hasText: 'Delete' })
-    if (await confirmBtn.isVisible({ timeout: 2_000 }).catch(() => false)) {
-      await confirmBtn.click()
-    }
-
+    // Individual chat delete has no confirm dialog — deletion is immediate
     // The deleted chat should no longer appear in the list
     await expect(page.locator('.chat-list-item').filter({ hasText: 'Message to delete' })).not.toBeVisible({ timeout: 5_000 })
   })
