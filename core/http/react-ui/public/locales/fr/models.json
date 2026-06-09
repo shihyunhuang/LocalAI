@@ -1,0 +1,93 @@
+{
+  "title": "Installer des modèles",
+  "subtitle": "Parcourez et installez des modèles d'IA depuis la galerie",
+  "stats": {
+    "available": "Disponibles",
+    "installed": "Installés"
+  },
+  "actions": {
+    "addModel": "Ajouter un modèle",
+    "importModel": "Importer un modèle",
+    "install": "Installer",
+    "reinstall": "Réinstaller",
+    "delete": "Supprimer"
+  },
+  "filters": {
+    "all": "Tous",
+    "llm": "Discussion",
+    "image": "Image",
+    "video": "Vidéo",
+    "multimodal": "Multimodal",
+    "vision": "Vision",
+    "tts": "Synthèse vocale",
+    "stt": "Transcription",
+    "diarization": "Diarisation",
+    "soundGen": "Son",
+    "audioTransform": "Effets audio",
+    "realtimeAudio": "Audio en temps réel",
+    "embedding": "Embeddings",
+    "rerank": "Reclassement",
+    "detection": "Détection",
+    "vad": "VAD",
+    "fitsGpu": "Tient dans le GPU",
+    "allBackends": "Tous les backends",
+    "searchBackends": "Rechercher des backends..."
+  },
+  "search": {
+    "placeholder": "Rechercher des modèles...",
+    "clearFilters": "Effacer les filtres"
+  },
+  "table": {
+    "modelName": "Nom du modèle",
+    "description": "Description",
+    "backend": "Backend",
+    "sizeVram": "Taille / VRAM",
+    "status": "État",
+    "actions": "Actions",
+    "size": "Taille : {{size}}",
+    "vram": "VRAM : {{vram}}",
+    "fits": "Tient",
+    "mayNotFit": "Pourrait ne pas tenir",
+    "trustRemoteCode": "Faire confiance au code distant",
+    "installing": "Installation",
+    "installingPct": "Installation · {{percent}} %",
+    "installed": "Installé",
+    "notInstalled": "Non installé"
+  },
+  "detail": {
+    "description": "Description",
+    "gallery": "Galerie",
+    "backend": "Backend",
+    "size": "Taille",
+    "vram": "VRAM",
+    "license": "Licence",
+    "tags": "Étiquettes",
+    "links": "Liens",
+    "warning": "Avertissement",
+    "files": "Fichiers",
+    "fitsGpu": "Tient dans le GPU",
+    "mayNotFitGpu": "Pourrait ne pas tenir dans le GPU",
+    "requiresTrustRemoteCode": "Nécessite de faire confiance au code distant",
+    "fileCount_one": "{{count}} fichier",
+    "fileCount_other": "{{count}} fichiers",
+    "filename": "Nom du fichier",
+    "uri": "URI",
+    "sha256": "SHA256"
+  },
+  "empty": {
+    "title": "Aucun modèle trouvé",
+    "withFilters": "Aucun modèle ne correspond à votre recherche ou à vos filtres actuels.",
+    "noFilters": "La galerie de modèles est vide."
+  },
+  "deleteDialog": {
+    "title": "Supprimer le modèle",
+    "message": "Supprimer le modèle {{model}} ?",
+    "confirm": "Supprimer {{model}}",
+    "deletingToast": "Suppression de {{model}}..."
+  },
+  "errors": {
+    "loadFailed": "Échec du chargement des modèles : {{message}}",
+    "installFailed": "Échec de l'installation : {{message}}",
+    "deleteFailed": "Échec de la suppression : {{message}}"
+  }
+}
