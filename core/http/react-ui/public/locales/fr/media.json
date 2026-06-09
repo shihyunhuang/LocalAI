@@ -1,0 +1,154 @@
+{
+  "studio": {
+    "tabs": {
+      "images": "Images",
+      "video": "Vidéo",
+      "tts": "Synthèse vocale",
+      "sound": "Son"
+    }
+  },
+  "image": {
+    "title": "Génération d'images",
+    "labels": {
+      "model": "Modèle",
+      "prompt": "Invite",
+      "promptPlaceholder": "Décrivez l'image que vous souhaitez générer...",
+      "negativePrompt": "Invite négative",
+      "negativePromptPlaceholder": "Ce qu'il faut éviter...",
+      "size": "Taille",
+      "count": "Nombre (1-4)",
+      "advanced": "Paramètres avancés",
+      "imageInputs": "Images d'entrée",
+      "steps": "Étapes",
+      "stepsPlaceholder": "20",
+      "seed": "Graine",
+      "seedPlaceholder": "Aléatoire",
+      "sourceImage": "Image source (img2img)",
+      "refImages": "Images de référence",
+      "refImagesAdded_one": "{{count}} image ajoutée",
+      "refImagesAdded_other": "{{count}} images ajoutées"
+    },
+    "actions": {
+      "generate": "Générer",
+      "generating": "Génération..."
+    },
+    "empty": "Les images générées apparaîtront ici",
+    "toasts": {
+      "noPrompt": "Veuillez saisir une invite",
+      "noModel": "Veuillez sélectionner un modèle",
+      "noResults": "Aucune image générée"
+    }
+  },
+  "video": {
+    "title": "Génération de vidéos",
+    "labels": {
+      "model": "Modèle",
+      "prompt": "Invite",
+      "promptPlaceholder": "Décrivez la vidéo que vous souhaitez générer...",
+      "duration": "Durée (secondes)",
+      "fps": "IPS",
+      "size": "Taille",
+      "advanced": "Paramètres avancés",
+      "seed": "Graine",
+      "seedPlaceholder": "Aléatoire"
+    },
+    "actions": {
+      "generate": "Générer",
+      "generating": "Génération..."
+    },
+    "empty": "La vidéo générée apparaîtra ici",
+    "toasts": {
+      "noPrompt": "Veuillez saisir une invite",
+      "noModel": "Veuillez sélectionner un modèle",
+      "noResults": "Aucune vidéo générée"
+    }
+  },
+  "tts": {
+    "title": "Synthèse vocale",
+    "labels": {
+      "model": "Modèle",
+      "voice": "Voix",
+      "voicePlaceholder": "Identifiant de voix facultatif",
+      "input": "Texte",
+      "inputPlaceholder": "Saisissez le texte à synthétiser..."
+    },
+    "actions": {
+      "generate": "Générer",
+      "generating": "Génération..."
+    },
+    "empty": "L'audio généré apparaîtra ici",
+    "toasts": {
+      "noText": "Veuillez saisir du texte",
+      "noModel": "Veuillez sélectionner un modèle",
+      "generateFailed": "Échec de la génération"
+    }
+  },
+  "sound": {
+    "title": "Génération de sons",
+    "labels": {
+      "model": "Modèle",
+      "prompt": "Invite",
+      "promptPlaceholder": "Décrivez le son que vous souhaitez générer...",
+      "duration": "Durée (secondes)",
+      "language": "Langue",
+      "vocalLanguage": "Langue vocale",
+      "lyrics": "Paroles (facultatif)",
+      "lyricsPlaceholder": "Paroles pour la génération vocale",
+      "advanced": "Paramètres avancés",
+      "seed": "Graine",
+      "seedPlaceholder": "Aléatoire"
+    },
+    "actions": {
+      "generate": "Générer",
+      "generating": "Génération..."
+    },
+    "empty": "L'audio généré apparaîtra ici",
+    "toasts": {
+      "noPrompt": "Veuillez saisir une invite",
+      "noModel": "Veuillez sélectionner un modèle",
+      "generateFailed": "Échec de la génération"
+    }
+  },
+  "talk": {
+    "title": "Parler",
+    "subtitle": "Conversation vocale en temps réel",
+    "actions": {
+      "start": "Démarrer la session",
+      "stop": "Terminer la session",
+      "connecting": "Connexion...",
+      "muted": "Muet",
+      "mute": "Couper le son",
+      "unmute": "Réactiver le son"
+    },
+    "labels": {
+      "model": "Modèle",
+      "voice": "Voix",
+      "voicePlaceholder": "alloy",
+      "language": "Langue",
+      "languagePlaceholder": "fr",
+      "instructions": "Instructions",
+      "instructionsPlaceholder": "Définissez la personnalité de l'assistant..."
+    },
+    "status": {
+      "idle": "Inactif",
+      "connecting": "Connexion...",
+      "listening": "Écoute...",
+      "speaking": "Parole...",
+      "ended": "Session terminée"
+    },
+    "toasts": {
+      "noModel": "Sélectionnez d'abord un modèle",
+      "connectFailed": "Échec de la connexion : {{message}}"
+    }
+  },
+  "history": {
+    "title": "Historique",
+    "empty": "Aucun historique pour le moment",
+    "deleteEntry": "Supprimer l'entrée",
+    "clear": "Effacer l'historique",
+    "clearTitle": "Effacer tout l'historique",
+    "clearMessage": "Supprimer toutes les entrées de l'historique ? Cette action est irréversible.",
+    "clearConfirm": "Effacer",
+    "cleared": "Historique effacé"
+  }
+}

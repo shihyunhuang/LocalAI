@@ -9,6 +9,7 @@ export const SUPPORTED_LANGUAGES = [
   { code: 'it', name: 'Italiano', flag: 'IT' },
   { code: 'es', name: 'Español', flag: 'ES' },
   { code: 'de', name: 'Deutsch', flag: 'DE' },
+  { code: 'fr', name: 'Français', flag: 'FR' },
   { code: 'zh-CN', name: '简体中文', flag: 'ZH' },
 ]
 

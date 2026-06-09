@@ -1,0 +1,66 @@
+{
+  "cluster": {
+    "vram": "VRAM du cluster",
+    "ram": "RAM du cluster",
+    "nodesOnline": "{{healthy}}/{{total}} nœuds en ligne"
+  },
+  "resourceGpu": "GPU",
+  "resourceRam": "RAM",
+  "assistant": {
+    "title": "Gérer LocalAI en discutant",
+    "description": "Installez des modèles, changez de backend, modifiez les configurations et vérifiez l'état en discutant avec LocalAI.",
+    "open": "Ouvrir l'assistant",
+    "tooltip": "Gérer LocalAI en discutant"
+  },
+  "input": {
+    "placeholder": "Message...",
+    "attachImage": "Joindre une image",
+    "attachAudio": "Joindre un audio",
+    "attachFile": "Joindre un fichier",
+    "enterToSend": "Entrée pour envoyer",
+    "selectModelFirst": "Sélectionnez d'abord un modèle",
+    "sendMessage": "Envoyer le message",
+    "selectModelToast": "Veuillez d'abord sélectionner un modèle"
+  },
+  "quickLinks": {
+    "manageByChat": "Gérer par discussion",
+    "installedModels": "Modèles installés",
+    "browseGallery": "Parcourir la galerie",
+    "importModel": "Importer un modèle",
+    "documentation": "Documentation"
+  },
+  "loadedModels": {
+    "count_one": "{{count}} modèle chargé",
+    "count_other": "{{count}} modèles chargés",
+    "stop": "Arrêter le modèle",
+    "stopAll": "Tout arrêter"
+  },
+  "stopDialog": {
+    "title": "Arrêter le modèle",
+    "message": "Arrêter le modèle {{model}} ?",
+    "confirm": "Arrêter {{model}}",
+    "stopAllTitle": "Arrêter tous les modèles",
+    "stopAllMessage": "Arrêter les {{count}} modèles chargés ?",
+    "stopAllConfirm": "Tout arrêter",
+    "stoppedToast": "{{model}} arrêté",
+    "allStoppedToast": "Tous les modèles ont été arrêtés",
+    "stopFailed": "Échec de l'arrêt : {{message}}"
+  },
+  "wizard": {
+    "getStarted": "Démarrer avec {{name}}",
+    "intro": "Installez votre premier modèle pour commencer. Parcourez la galerie ou importez le vôtre.",
+    "steps": {
+      "step1Title": "Parcourez la galerie de modèles",
+      "step1Body": "Trouvez le modèle adapté à vos besoins dans notre collection sélectionnée.",
+      "step2Title": "Installez un modèle",
+      "step2Body": "Cliquez sur installer pour le télécharger et le configurer automatiquement.",
+      "step3Title": "Commencez à discuter",
+      "step3Body": "Discutez avec votre modèle directement depuis le navigateur ou utilisez l'API."
+    },
+    "browseGallery": "Parcourir la galerie de modèles",
+    "importModel": "Importer un modèle",
+    "docs": "Docs",
+    "noModelsTitle": "Aucun modèle disponible",
+    "noModelsBody": "Aucun modèle n'est encore installé. Demandez à votre administrateur de configurer des modèles pour pouvoir commencer à discuter."
+  }
+}

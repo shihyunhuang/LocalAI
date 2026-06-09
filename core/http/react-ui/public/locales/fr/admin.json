@@ -1,0 +1,85 @@
+{
+  "manage": {
+    "title": "Système",
+    "subtitle": "Gérer les modèles et backends installés"
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Configurer les paramètres d'exécution de LocalAI",
+    "saved": "Paramètres enregistrés avec succès",
+    "saveFailed": "Échec de l'enregistrement : {{message}}",
+    "loadFailed": "Échec du chargement des paramètres : {{message}}",
+    "sections": {
+      "branding": "Image de marque",
+      "watchdog": "Surveillance",
+      "memory": "Mémoire",
+      "backends": "Backends",
+      "performance": "Performance",
+      "tracing": "Traçage",
+      "api": "API et CORS",
+      "p2p": "P2P",
+      "galleries": "Galeries",
+      "apikeys": "Clés API",
+      "agents": "Tâches d'agent",
+      "agentpool": "Pool d'agents",
+      "assistant": "Assistant LocalAI",
+      "responses": "Réponses"
+    }
+  },
+  "backends": {
+    "title": "Gestion des backends",
+    "subtitle": "Découvrez et installez des backends d'IA pour alimenter vos modèles"
+  },
+  "backendLogs": {
+    "title": "Journaux des backends",
+    "subtitle": "Consulter les journaux des backends en cours d'exécution",
+    "empty": "Aucun journal disponible"
+  },
+  "traces": {
+    "title": "Traces",
+    "subtitle": "Consulter les requêtes API, les réponses et les opérations des backends enregistrées"
+  },
+  "nodes": {
+    "title": "Nœuds distribués",
+    "subtitle": "Gérer les nœuds de travail des backends et des agents"
+  },
+  "p2p": {
+    "title": "Calcul d'IA distribué",
+    "subtitle": "Répartissez vos charges de travail d'IA sur plusieurs appareils grâce à la distribution pair-à-pair"
+  },
+  "users": {
+    "title": "Utilisateurs",
+    "subtitle": "Gérer les utilisateurs enregistrés, les rôles et les invitations"
+  },
+  "usage": {
+    "title": "Utilisation",
+    "subtitle": "Statistiques d'utilisation des jetons API",
+    "sources": {
+      "tab": "Sources",
+      "mixTitle": "Répartition des sources",
+      "ribbonAria": "{{apikey}}% clés API, {{web}}% interface Web, {{legacy}}% héritées",
+      "topSources": "Principales sources au fil du temps",
+      "searchPlaceholder": "Rechercher par nom ou préfixe",
+      "sortBy": "Trier",
+      "sortTokens": "Jetons",
+      "sortRequests": "Requêtes",
+      "sortLastUsed": "Dernière utilisation",
+      "sortName": "Nom",
+      "sortUser": "Utilisateur",
+      "webUI": "Interface Web",
+      "legacy": "Héritée",
+      "revoked": "révoquée",
+      "filteredTo": "Filtré sur : {{name}}",
+      "clearFilter": "Effacer le filtre",
+      "other": "Autre ({{count}})",
+      "noTrafficShort": "Aucune requête sur cette période.",
+      "noKeysYet": "Dès que des requêtes arriveront, vous les verrez détaillées ici.",
+      "createKey": "Créez votre première clé API",
+      "truncatedWarning": "Affichage des 200 premières clés. Appliquez un filtre pour affiner davantage."
+    }
+  },
+  "explorer": {
+    "title": "Explorateur",
+    "subtitle": "Parcourir les fichiers et la configuration"
+  }
+}
